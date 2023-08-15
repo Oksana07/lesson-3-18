@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок №3</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="">Блоковіта рядкові теги</a></li>
+            <li><a href="">Символьні підстаовки</a></li>
+            <li><a href="">Таблиці та Форми</a></li>
+        </ul>
+    </header>
+    <main>
+        <!-- Блокові -->
+        <section>
+            <h2>Блоковіта рядкові теги</h2>
+
+            <h3>Блокові теги</h3>
+            <header>
+
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, sapiente?</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, sapiente?</li>
+                </ul>
+            </header>
+            <footer></footer>
+            <div></div>
+            <h1>Lorem, ipsum dolor.</h1>
+            <section>
+                <!-- анонімні -->
+                <ul>
+                    <li><a href="">посилання</a></li>
+                    <li><a href="">посилання</a></li>
+                </ul>
+            </section>
+            <p>Lorem ipsum dolor <span>sit amet consectetur</span> sit amet consectetur, adipisicing elit. Nihil et
+                itaque
+                possimus iure a facere odio,
+                officiis
+                quidem facilis doloribus.</p>
+
+            <h3>Рядкові теги</h3>
+            <a href="">посилання</a>
+            <b>жирний</b>
+            <i>курсив</i>
+            <input type="text">
+            <img src="./Чорно-білий Мінімалістичний Простий Шрифтовий Логотип.png" alt="" width="100">
+        </section>
+        <!-- Символьні підстаовки -->
+        <section>
+            <ul>
+                <li>&lt; і /&gt; - курсив</li>
+                <li>&lt; b /&gt; - жирний</li>
+            </ul>
+            <p>&#9786;</p>
+        </section>
+        <!-- Таблиці -->
+        <section>
+            <table>
+                <caption>Розклад уроків</caption>
+                <thead>
+                    <tr>
+                        <th>№ п/п</th>
+                        <th>Понеділок</th>
+                        <th>Вівторок</th>
+                        <th>Середа</th>
+                        <th>Четвер</th>
+                        <th>Пя'тниця</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>Математика</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Англійська мова</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Фізкультура</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Кількість</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <br>
+
+        <!-- Форми -->
+        <section>
+            <form name="form">
+                <label>
+                    І'мя
+                    <input type="text" placeholder="І'мя">
+                </label>
+                <br>
+                <label>
+                    email
+                    <input type="email" placeholder="email" autofocus>
+                </label>
+                <br>
+                <label>
+                    password
+                    <input type="password" placeholder="password">
+                </label>
+                <br>
+                <label>
+                    tel
+                    <input type="tel" placeholder="tel">
+                </label>
+                <br>
+                <!-- Радіокнопки -->
+                <label>
+                    <input type="radio" name="status" value="Студнт">
+                    Студнт
+                </label>
+                <label>
+                    <input type="radio" name="status" value="Викладач" checked>
+                    Викладач
+                </label>
+                <label>
+                    <input type="radio" name="status" value="Батьки">
+                    Батьки
+                </label>
+                <br>
+                <!-- Чекбокс -->
+                <label>
+                    <input type="checkbox">
+                    Чи погоджуєтесь ви з правилами
+                </label>
+                <br>
+                <!-- Повзунки -->
+                <label>
+                    Interest rate:
+                    <input type="range" name="interest_rate" value="40" min="0" max="100" step="20" />
+                </label>
+
+                <p>Selected value: <span class="js-selected-value">40</span></p>
+                <br>
+
+                <!-- Дата і час -->
+                <label>date<input type="date"></label>
+                <br>
+                <label>time<input type="time"></label>
+                <br>
+                <label>datetime-local<input type="datetime-local"></label>
+                <br>
+                <!-- Елемент <textarea> -->
+                <label>
+                    <textarea name="" rows="10" placeholder="коментар"></textarea>
+                </label>
+                <br>
+                <!-- Елемент <select> -->
+                <label for="size">Size</label>
+                <select id="size" name="size">
+                    <option value="xs">Extra Small</option>
+                    <option value="s">Small</option>
+                    <option value="m" selected>Medium</option>
+                    <option value="l">Large</option>
+                </select>
+            </form>
+        </section>
+
+        <!-- Домашня робота №3 -->
+        <!-- 1 -->
+        <h2>Блокові теги</h2>
+        <ul>
+            <li>div</li>
+            <li>body</li>
+            <li>&lt; ul &gt;</li>
+        </ul>
+
+        <h2>рядкові теги</h2>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!-- Розклад уроків -->
+
+
+
+    </main>
+
+    <footer>
+        <p>Права зихищені 2023 &copy;</p>
+    </footer>
+
+</body>
+
+</html>
